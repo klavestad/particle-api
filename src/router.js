@@ -6,9 +6,9 @@ const router = express.Router()
 
 const particle = new Particle(CREDENTIALS);
 
-router.get('/api', (req, res) => res.send({
-    message: 'API'
-}))
+router.get('/api', (req, res) => {
+    res.sendStatus(418)
+})
 
 router.get('/api/login', async (req, res) => {
     const token = await particle.login()

@@ -10,5 +10,12 @@ app.use(bodyParser.urlencoded({
 }))
 
 app.use(bodyParser.json())
+
+app.get('/', function (req, res) {
+    res.sendFile('index.html', {
+        root: __dirname + "/"
+    });
+});
+
 app.use(router)
 app.listen(port, () => console.log(`Server is running on http://localhost:${port}`))
