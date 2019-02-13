@@ -1,0 +1,25 @@
+{
+    "name": "particle-api",
+    "version": "1.0.0",
+    "main": "index.js",
+    "repository": "https://github.com/klavestad/particle-api.git",
+    "license": "MIT",
+    "scripts": {
+        "start": "node bin/dev",
+        "start:dev": "nodemon bin/dev"
+    },
+    "dependencies": {
+        "@babel/runtime": "^7.3.1",
+        "babel-cli": "^6.26.0",
+        "body-parser": "^1.18.3",
+        "express": "^4.16.4",
+        "particle-api-js": "^7.3.0"
+    },
+    "devDependencies": {
+        "@babel/core": "^7.1.2",
+        "@babel/plugin-transform-runtime": "^7.2.0",
+        "@babel/preset-env": "^7.1.0",
+        "@babel/register": "^7.0.0",
+        "nodemon": "^1.18.10"
+    }
+}
