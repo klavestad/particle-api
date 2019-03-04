@@ -9,6 +9,7 @@
         "start:dev": "nodemon bin/dev"
     },
     "dependencies": {
+        "@azure/event-hubs": "^1.0.8",
         "@babel/runtime": "^7.3.1",
         "babel-cli": "^6.26.0",
         "body-parser": "^1.18.3",
